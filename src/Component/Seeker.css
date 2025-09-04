@@ -1,0 +1,155 @@
+.seek
+{
+    height: 10vh;
+    width: 100vw;
+    color: azure;
+   overflow: hidden;
+    display: flex;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.left1,.right1,.center1
+{
+    height: 10vh;
+    width: 30vw;
+    align-items: center;
+}
+
+.left1
+{
+    display: flex;
+    flex-direction: flex-start;
+    padding-left: 30px;
+}
+
+.left1 img
+{
+    height: 50px;
+    width: auto;
+}
+
+
+.left1 .details span
+{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.center1 {
+ display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls button {
+  background-color:#000000;
+  color: white;
+  border: none;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+ 
+  
+}
+
+.controls img
+{
+  height: 35px;
+  width: auto;
+  border-radius: 25px;
+}
+
+.right1
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seekbar
+{
+  height: 5px;
+  width: 300px;
+}
+
+.controls button:hover
+{
+  scale: 0.9;
+}
+
+@media (max-width:480px) {
+  .seek
+{
+   
+    gap: 10px;
+   
+}
+
+
+.left1
+{
+    width: 30vw;
+    padding-left: 10px;
+}
+
+.left1 img
+{
+    height: 25px;
+   
+}
+
+.center1{
+  width: 50vw;
+  
+}
+
+
+.left1 .details span
+{
+    margin-left: 5px;
+    
+    gap: 5px;
+    font-size: 10px;
+}
+
+.controls button {
+  
+  margin: 5px;
+  font-size: 10px;
+  
+}
+
+.controls img
+{
+  height:  20px;
+
+}
+
+
+
+.seekbar
+{
+  height: 3px;
+  width: 120px;
+}
+
+.controls button:hover
+{
+  scale: 0.9;
+}
+
+
+
+}
+
+  
+

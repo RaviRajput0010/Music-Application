@@ -1,0 +1,27 @@
+.Homepage
+{
+    height:80vh;
+    width:70vw;
+    background-color: #121212;
+    border-radius: 10px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    transition: height 0.2s ease;
+
+}
+
+.Homepage::-webkit-scrollbar
+{
+    display: none;
+}
+
+@media (max-width:480px) {
+    .Homepage
+    {
+        width: 90vw;
+    }
+    
+}

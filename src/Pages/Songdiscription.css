@@ -1,0 +1,317 @@
+.album
+{
+    height:100vh;
+    width:65vw;
+    background-color: #121212;
+    border-radius: 10px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    transition: height 0.2s ease;
+
+}
+
+.album::-webkit-scrollbar
+{
+    display: none;
+}
+
+.album .top
+{
+    height: 45vh;
+    width: 100%;
+    background:linear-gradient(#C10739,#6B0111);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.top img
+{
+    padding-top: 10px;
+    height: 180px;
+    width: auto;
+    padding-left: 10px;
+    transition: transform 0.2s ease;
+    padding-bottom: 10px;
+}
+
+.top h1
+{
+    height: 50px;
+    width: auto;
+    color: white;
+    font-size: 40px;
+}
+
+.bottom
+{
+    height: 15vh;
+    width: 100%;
+    background:linear-gradient(#470710,#240E11);
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    position: relative;
+   
+}
+
+.info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    color: white;
+}
+
+.box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    gap: 20px;
+}
+
+.playbtn 
+{
+    height: 40px;
+    width: 40px;
+    background-color: #3BE477;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.playbtn img
+{
+    height: 10px;
+    width: 10px;
+}
+
+.top img:hover
+{
+    transform: scale(1.02);
+}
+
+.image
+{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album .section
+{
+    min-height: 300px;
+    height: auto;
+    width: 95%;
+    margin: 10px 0px;
+    color: white;   
+}
+
+.album .section .singlesong
+{
+    height: 250px;
+    width: 170px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.songs
+{
+    display: flex;
+    gap:15px;
+    overflow-x: auto;
+}
+
+
+.singlesong:hover {
+  transform: scale(1.05);
+}
+
+.songtimings 
+{
+    height: auto;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+    padding-left: 30px;
+}
+
+.songtimings 
+{
+    display: flex;
+}
+
+.songtimings button
+{
+    height: 40px;
+    width: 110px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(235, 104, 17),rgb(219, 39, 7));
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.album .section .songs .singlesong .playbtn{
+    transition: 0.5s ease-in;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    bottom: 35%;
+    height: 45px;
+    width: 45px;
+    background-color: #39DE74;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heading 
+{
+    height: 50px;
+    width: 100%;   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+
+.album .section .songs .singlesong .playbtn img{
+    height: 15px;
+    width: 15px;
+}
+
+.bottom .playbtn #plus
+{
+    margin: 0px 4px;
+    margin-bottom: 2px;
+}
+
+@media (max-width:480px) {
+
+    .album
+{
+    height:100vh;
+    width:90vw;
+   
+}
+
+.top .image
+{
+    margin-left:20px;
+}
+
+.top .image img
+{
+    height: 120px;
+    width: 120px;
+}
+
+.top .info
+{
+    font-size: 12px;
+}
+
+.section
+{
+    min-height: 250px;
+    
+}
+
+.singlesong
+{
+    height: 180px;
+    width: 150px;
+    text-overflow: clip;
+    font-size: 12px;
+    
+}
+
+
+
+.singlesong #songimage
+{
+    height: 90px;
+    width: 90px;
+}
+
+.songs
+{
+
+    gap:8px;
+    
+}
+
+
+
+.singlesong .playbtn{
+    
+    right: 5px;
+    bottom: 55%;
+    height: 25px;
+    width: 25px;
+    
+    
+}
+
+
+.singlesong .playbtn img{
+    height: 10px;
+    width: 10px;
+}
+
+
+.section .songs .singlesong h4{
+    white-space: nowrap;      /* Keep text in one line */
+  overflow: hidden;         /* Hide extra text */
+  text-overflow: ellipsis;
+  text-wrap: wrap;
+}
+
+
+.album .section .songs.singlesong .playbtn {
+    
+    right: 5px;
+    bottom: 65%;
+    height: 25px;
+    width: 10px;
+    background-color: red;
+    
+    
+}
+
+
+.album .section .songs .singlesong .playbtn img{
+    height: 10px;
+    width: 10px;
+}
+
+
+    
+}

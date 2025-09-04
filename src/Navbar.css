@@ -1,0 +1,249 @@
+nav
+{
+    height: 8vh;
+    width: 90%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li:hover
+{
+    cursor: pointer;
+}
+
+.left 
+{
+    height: 9vh;
+    width: 50%;
+    background-color: #000000;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.left li img
+{
+    height: 50px;
+    width: auto;
+}
+
+.left li
+{
+    list-style: none;
+}
+
+
+#search
+{
+     height: 30px;
+    width: auto;
+    position: absolute;
+    left: 45px;
+    z-index: 1;
+   
+    margin: 20px;
+}
+
+.left input
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color:#2A2A2A;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-left:60px ;
+    padding-left: 50px;
+    
+}
+
+.styled-input::placeholder
+{
+    font-size: 14px;
+    color: #AAB3AF;
+    font-weight: bold;
+}
+
+#folder
+{
+    height: 40px;
+    width: auto;
+    position: absolute;
+    left: 550px;
+    z-index: 1;
+}
+
+.right
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.right li
+{
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    color:  #AAB3AF;
+    display: flex;
+   
+}
+
+#down
+{
+    height: 30px;
+    width: auto;
+}
+
+#btnlogin
+{
+    background-color:white;
+    color: #000000;
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    right: 0px;
+}
+
+.right li:hover
+{
+    scale: 1.05;
+    color: white;
+}
+
+#btnlogin:hover
+{
+    scale: 1.05;
+}
+
+input::selection 
+{
+      background-color: black;
+      color: white;
+}
+
+ .left input:focus 
+ {
+      border-color: white;
+    border: 2px solid;
+      outline: none;
+      background-color: #222;
+      color: white;
+ }
+
+.download li
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#home:hover
+{
+    scale: 1.05;
+}
+
+#searchparent
+{
+    position: relative;
+    height: 38px;
+    width: 400px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list
+{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#explore
+{
+    height: 30px;
+    width: 130px;
+    border-radius: 15px;
+}
+
+@media (max-width:480px) {
+
+
+    .left
+    {
+    height: 9vh;
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    }
+
+   
+
+    #playlist-btn
+    {
+        height: 30px;
+        width: 70px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+
+    #playlist-btn:hover
+    {
+        background-color: #ddd;
+        scale: 1.02;
+    }
+
+    
+#searchparent input
+{
+    height: 30px;
+    width: 93px;
+    padding-left: 5px;
+    margin-left: 0px;
+    border: 2px white solid;
+}
+
+.left li img
+{
+    height: 40px;
+    width: auto;
+}
+
+@media (max-width:480px) {
+  .right {
+      display: flex;   /* keep it visible */
+      gap: 10px;
+      align-items: center;
+  }
+
+  /* Hide only the things you don’t want on small screens */
+  .right .list,
+  #explore,
+  .download {
+      display: none;
+  }
+
+  /* Optional: style username differently */
+  .right p {
+      font-size: 14px;
+      font-weight: bold;
+      color: #c7d7d0;
+      align-self: flex-end;
+  }
+}
+
+
+    
+}

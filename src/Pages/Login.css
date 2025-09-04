@@ -1,0 +1,102 @@
+.login
+{
+    height:85vh;
+    width:65vw;
+    background: linear-gradient(#2a2a2a,#040404);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container img
+{
+    height: 50px;
+    width: 50px;
+
+}
+
+.container ul 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.container ul li button
+{
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    color: #E3E3E3;
+    background-color: #121212;
+}
+
+.container ul li button:hover
+{
+    border-color: white;
+}
+
+.existing
+{
+    padding-top: 20px;
+    width: 50%;
+    padding-left: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-top: 0.1px solid #292929;
+    
+}
+
+.existing li,input
+{
+    height: 40px;
+    width: 300px;
+    list-style: none;
+    background: transparent;
+    border-color: 0.1px solid white;
+    outline: none;
+    color: white;
+    
+}
+
+.existing button
+{
+    height: 40px;
+    width: 300px;
+    color: black;
+    font-weight: bold;
+    background-color: #3BE477;
+    border-radius: 20px;
+}
+
+.existing button:hover
+{
+    scale: 1.05;
+}
+
+#symbol
+{
+    height: 30px;
+    width: auto;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+@media (max-width:480px) {
+
+    .lastbox
+    {
+        margin-right: 20px;
+    }
+    
+}

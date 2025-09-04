@@ -1,0 +1,140 @@
+.section
+{
+    min-height: 300px;
+    height: auto;
+    width: 95%;
+    margin: 10px 0px;
+    color: white;   
+    overflow-y: hidden;
+}
+
+.heading 
+{
+    height: 50px;
+    width: 100%;   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.singlesong
+{
+    height: 220px;
+    width: 170px;
+    min-width: 120px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.singlesong:hover
+{
+    background-color: #1f1f1f;
+}
+
+.singlesong #songimage
+{
+    height: 130px;
+    width: 130px;
+}
+
+.songs
+{
+    display: flex;
+    gap:15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.section .songs::-webkit-scrollbar
+{
+    display: none;
+}
+
+.singlesong .playbtn{
+    transition: 0.5s ease-in;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    bottom: 35%;
+    height: 45px;
+    width: 45px;
+    background-color: #39DE74;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.singlesong .playbtn img{
+    height: 15px;
+    width: 15px;
+}
+
+
+@media (max-width:480px) {
+    .section{
+        height: 200px;
+        
+    }
+
+    
+.heading 
+{
+    height: 40px;
+    
+    
+}
+
+.singlesong
+{
+    height: 140px;
+    
+    
+}
+
+
+
+.singlesong #songimage
+{
+    height: 110px;
+    width: 110px;
+}
+
+.songs
+{
+
+    gap:8px;
+    
+}
+
+
+
+.singlesong .playbtn{
+    
+    right: 5px;
+    bottom: 55%;
+    height: 25px;
+    width: 25px;
+    
+    
+}
+
+
+.singlesong .playbtn img{
+    height: 10px;
+    width: 10px;
+}
+
+
+.singlesong h4{
+    white-space: nowrap;      /* Keep text in one line */
+  overflow: hidden;         /* Hide extra text */
+  text-overflow: ellipsis;  /* Show "..." */
+}
+
+
+
+}
