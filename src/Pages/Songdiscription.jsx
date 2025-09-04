@@ -26,13 +26,13 @@ function Songdiscription() {
     async function fetchdata() {
       try {
         setloading(true);
-        const res = await fetch(`http://127.0.0.1:5100/result/?query=${link}`);
+        const res = await fetch(`https://music-application-fzwf.onrender.com/result/?query=${link}`);
         const data = await res.json();
         setalldata(data[0]);
         setloading(false);
 
         const value = data[0].singers.split(",")[0].trim();
-        const recRes = await fetch(`http://127.0.0.1:5100/result/?query=${value}&lyrics=true`);
+        const recRes = await fetch(`https://music-application-fzwf.onrender.com/result/?query=${value}&lyrics=true`);
         const recData = await recRes.json();
         const filtered = recData.filter(item => item.media_url !== data[0].media_url);
         setRecommended(filtered);
