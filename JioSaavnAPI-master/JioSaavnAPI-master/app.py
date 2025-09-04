@@ -168,7 +168,6 @@ def result():
         return jsonify(error)
     return None
 
-
 if __name__ == '__main__':
-    app.debug = True
-    app.run(host='0.0.0.0', port=5100, use_reloader=True, threaded=True)
+    port = int(os.environ.get("PORT", 5100))  # use Render's PORT if available
+    app.run(host='0.0.0.0', port=port, debug=True)
