@@ -26,7 +26,7 @@ useEffect(() => {
 
   async function fetchdata() {
     try {
-      const res = await fetch(`http://127.0.0.1:5100/result/?query=${Search}&lyrics=true`);
+      const res = await fetch(`https://music-application-fzwf.onrender.com/result/?query=${Search}&lyrics=true`);
       const result = await res.json();
       console.log("Received data:", result);
       setdata(result);
