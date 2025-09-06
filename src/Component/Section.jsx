@@ -17,7 +17,7 @@ function Section(props) {
  useEffect(() => {
   async function fetchdata() {
     try {
-      const res = await fetch(`https://music-application-fzwf.onrender.com/result/?query=${props.category}&lyrics=true`);
+      const res = await fetch(`http://127.0.0.1:5100/result/?query=${props.category}&lyrics=true`);
       const data = await res.json();
       console.log("Received data:", data);
       setalldata(data)
